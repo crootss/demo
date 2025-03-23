@@ -1,4 +1,4 @@
-import {addJS,renderHTML,onClick,container} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.6/element.js";
+import {addJS,replaceTag,onClick,container} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.7/element.js";
 import {getQueryString} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.6/url.js";
 
 //add tailwindcss
@@ -9,9 +9,9 @@ const param=getQueryString();
 
 console.log(param);
 
-param.header && renderHTML('header',decodeURIComponent(param.header),afterHeaderLoad);
-param.main && renderHTML('main',decodeURIComponent(param.main),afterMainLoad);
-param.footer && renderHTML('footer',decodeURIComponent(param.footer),afterFooterLoad);
+param.header && replaceTag('header',decodeURIComponent(param.header),afterHeaderLoad);
+param.main && replaceTag('main',decodeURIComponent(param.main),afterMainLoad);
+param.footer && replaceTag('footer',decodeURIComponent(param.footer),afterFooterLoad);
 
 
 function afterHeaderLoad(){
