@@ -3,7 +3,7 @@ Laman Demo Website Per Section
 
 Cara pakai
 ```url
-https://crootss.if.co.id/demo/?header=John&main=25&footer=Jakarta%2FKota
+https://crootss.if.co.id/demo/?header=/header/nopo/paperka.html&main=/slider/twblog/paperka.html&section_one=/products/tw/paperka.html&footer=/footer/twblog/paperka.html
 ```
 
 Structur standar root stylesheet
