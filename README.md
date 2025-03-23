@@ -14,7 +14,7 @@ Structur standar root stylesheet
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paperka - Enjoy Life Now</title>
+    <title>Demo - Core Root Style Sheet</title>
 </head>
 <body>
 
