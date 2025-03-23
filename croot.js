@@ -11,6 +11,7 @@ console.log(param);
 
 param.header && replaceTag('header',decodeURIComponent(param.header),afterHeaderLoad);
 param.main && replaceTag('main',decodeURIComponent(param.main),afterMainLoad);
+param.section_one && replaceTag('section_one',decodeURIComponent(param.section_one),afterSectionOneLoad);
 param.footer && replaceTag('footer',decodeURIComponent(param.footer),afterFooterLoad);
 
 
@@ -22,6 +23,10 @@ function afterHeaderLoad(){
 
 function afterMainLoad(){
     console.log("Main terload");
+}
+
+function afterSectionOneLoad(){
+    console.log("Section one terload");
 }
 
 function afterFooterLoad(){
