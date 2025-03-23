@@ -1,4 +1,4 @@
-import {addJS,replaceTag,onClick,container} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.7/element.js";
+import {addJS,replaceTag,addCSS,container} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.7/element.js";
 import {getQueryString} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.6/url.js";
 
 //add tailwindcss
@@ -15,6 +15,8 @@ param.footer && replaceTag('footer',decodeURIComponent(param.footer),afterFooter
 
 
 function afterHeaderLoad(){
+    param.headerjs && addJS(param.headerjs);
+    param.headercss && addCSS(param.headercss);
     console.log("Header terload");
 }
 
