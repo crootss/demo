@@ -9,15 +9,19 @@ const param=getQueryString();
 
 console.log(param);
 
-renderHTML('header',param.header,afterHeaderLoad);
-renderHTML('main',param.main,afterMainLoad);
-renderHTML('footer',param.footer,afterMainLoad);
+param.header && renderHTML('header',param.header,afterHeaderLoad);
+param.main && renderHTML('main',param.main,afterMainLoad);
+param.footer && renderHTML('footer',param.footer,afterFooterLoad);
 
 
 function afterHeaderLoad(){
-
+    console.log("Header terload");
 }
 
 function afterMainLoad(){
+    console.log("Main terload");
+}
 
+function afterFooterLoad(){
+    console.log("footer terload");
 }

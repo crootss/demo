@@ -1,6 +1,11 @@
 # demo
 Laman Demo Website Per Section
 
+Cara pakai
+```url
+https://crootss.if.co.id/demo/?header=John&main=25&footer=Jakarta%2FKota
+```
+
 Structur standar root stylesheet
 
 ```html
