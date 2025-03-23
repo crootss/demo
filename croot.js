@@ -9,9 +9,9 @@ const param=getQueryString();
 
 console.log(param);
 
-param.header && renderHTML('header',param.header,afterHeaderLoad);
-param.main && renderHTML('main',param.main,afterMainLoad);
-param.footer && renderHTML('footer',param.footer,afterFooterLoad);
+param.header && renderHTML('header',decodeURIComponent(param.header),afterHeaderLoad);
+param.main && renderHTML('main',decodeURIComponent(param.main),afterMainLoad);
+param.footer && renderHTML('footer',decodeURIComponent(param.footer),afterFooterLoad);
 
 
 function afterHeaderLoad(){
